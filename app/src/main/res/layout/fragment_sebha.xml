@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="top|center_horizontal">
+
+        <!-- مسافة علوية تشبه marginTop 160dp -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+        <!-- الذكر الحالي -->
+        <TextView
+            android:id="@+id/tv_zikr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سبحان الله"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+             />
+
+        <!-- العداد -->
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="72sp"
+            android:textColor="#2E7D32"
+            android:fontFamily="serif"
+            android:layout_marginTop="24dp" />
+
+        <!-- زر التسبيح -->
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="سبّح"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginTop="24dp" />
+
+        <!-- أزرار التحكم -->
+        <LinearLayout
+            android:id="@+id/control_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="تصفير"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="التالي"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary_dark"
+                android:layout_marginStart="8dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

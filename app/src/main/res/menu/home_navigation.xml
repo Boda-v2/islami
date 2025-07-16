@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_quran"
+        android:icon="@drawable/ic_quran"
+        android:title="القرآن" />
+
+    <item
+        android:id="@+id/navigation_hadeth"
+        android:icon="@drawable/ic_hadeth"
+        android:title="الأحاديث" />
+
+    <item
+        android:id="@+id/navigation_sebha"
+        android:icon="@drawable/ic_sebha"
+        android:title="تسبيح" />
+
+    <item
+        android:id="@+id/navigation_radio"
+        android:icon="@drawable/ic_azkar"
+        android:title="اذكار" />
+
+
+
+</menu>

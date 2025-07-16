@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_primary">#FF000000</color> <!-- أسود -->
+    <color name="text_secondary">#FF555555</color> <!-- رمادي غامق -->
+    <color name="primary">#70935B</color>
+    <color name="primary_dark">#435637</color>
+    <color name="bookmark_highlight">#C4435637</color>
+</resources>

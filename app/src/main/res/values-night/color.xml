@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_primary">#FFFFFFFF</color> <!-- أبيض -->
+    <color name="text_secondary">#B3FFFFFF</color> <!-- رمادي فاتح -->
+
+    <!-- ألوان التصميم الداكن من XD -->
+    <color name="primary">#41734C</color> <!-- الخلفية العامة -->
+    <color name="primary_dark">#113E2A</color> <!-- خلفية الكروت -->
+    <color name="bookmark_highlight">#80FFD700</color> <!-- شفاف بلون ذهبي -->
+</resources>

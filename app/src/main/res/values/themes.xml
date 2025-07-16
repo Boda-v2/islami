@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Islami" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="color">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+
+        <!-- ✅ Status bar settings -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="bottomNavigationStyle">@style/NoTintBottomNav</item>
+
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="rippleColor">@android:color/transparent</item>
+
+
+
+
+
+    </style>
+
+    <style name="Theme.Islami" parent="Base.Theme.Islami" />
+</resources>

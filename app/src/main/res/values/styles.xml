@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoTintBottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@null</item>
+        <item name="itemTextColor">@null</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+</resources>

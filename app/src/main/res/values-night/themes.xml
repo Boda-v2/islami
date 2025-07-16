@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- الثيم الأساسي في الوضع الليلي -->
+    <style name="Base.Theme.Islami" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- ألوان الوضع الليلي -->
+        <item name="color">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+
+        <!-- ✅ شريط الحالة -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- مهم جدًا للوضع الليلي -->
+
+        <!-- ✅ تنسيق البوتوم نافيجيشن -->
+        <item name="bottomNavigationStyle">@style/NoTintBottomNav</item>
+
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+        <item name="rippleColor">@android:color/transparent</item>
+
+
+
+
+    </style>
+
+    <style name="Theme.Islami" parent="Base.Theme.Islami" />
+</resources>
