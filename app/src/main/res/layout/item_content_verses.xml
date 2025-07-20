@@ -15,7 +15,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="20sp"
         android:textColor="@color/text_primary"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textDirection="rtl"
+        android:layoutDirection="rtl"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

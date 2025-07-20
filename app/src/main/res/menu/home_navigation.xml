@@ -16,7 +16,7 @@
         android:title="تسبيح" />
 
     <item
-        android:id="@+id/navigation_radio"
+        android:id="@+id/navigation_azkar"
         android:icon="@drawable/ic_azkar"
         android:title="اذكار" />
 

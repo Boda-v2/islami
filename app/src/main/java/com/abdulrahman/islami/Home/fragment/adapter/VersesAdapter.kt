@@ -1,6 +1,7 @@
 package com.abdulrahman.islami.Home.fragment.adapter
 
 import android.graphics.Color
+import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,10 +16,18 @@ class VersesAdapter : RecyclerView.Adapter<VersesAdapter.ViewHolder>() {
     var bookmarkPosition: Int = -1
     var onLongClick: ((Int) -> Unit)? = null
 
+    private var quranTypeface: Typeface? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_content_verses, parent, false)
-        return ViewHolder(view)
+
+        // تحميل الخط مرة واحدة فقط
+        if (quranTypeface == null) {
+            quranTypeface = Typeface.createFromAsset(parent.context.assets, "fonts/quran.ttf")
+        }
+
+        return ViewHolder(view, quranTypeface!!)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -26,7 +35,7 @@ class VersesAdapter : RecyclerView.Adapter<VersesAdapter.ViewHolder>() {
         val verseNumber = position + 1
         holder.content.text = "($verseNumber) $content"
 
-        // إذا كانت هذه هي الآية المرجعية
+        // تلوين الآية المرجعية
         if (position == bookmarkPosition) {
             holder.content.setBackgroundColor(
                 ContextCompat.getColor(holder.itemView.context, R.color.bookmark_highlight)
@@ -50,7 +59,13 @@ class VersesAdapter : RecyclerView.Adapter<VersesAdapter.ViewHolder>() {
         return items?.size ?: 0
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, quranTypeface: Typeface) : RecyclerView.ViewHolder(itemView) {
         val content: TextView = itemView.findViewById(R.id.content)
+
+        init {
+            content.typeface = quranTypeface
+            content.textDirection = View.TEXT_DIRECTION_RTL
+            content.textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+        }
     }
 }
